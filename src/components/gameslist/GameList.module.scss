@@ -1,0 +1,138 @@
+.gameslist {
+  padding-top: 200px;
+
+  .loader_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .error {
+    text-align: center;
+    font-font: 'Prompt';
+    font-size: 2rem;
+    color: red;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Prompt';
+    margin-bottom: 20px;
+  }
+
+
+  form {
+    align-self: center;
+    justify-content: center;
+
+    label {
+      font-size: 1rem;
+      font-family: 'Prompt';
+
+    }
+  }
+
+
+  .scroll_block {
+    padding-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+
+    .scroll_button {
+      font-weight: 500;
+      font-family: 'Roboto';
+      font-size: 1.2rem;
+    }
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid whitesmoke;
+    margin-bottom: 10px;
+    max-width: 1200px;
+
+
+    tbody {
+      tr {
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #e6f0ff;
+        }
+      }
+    }
+  }
+
+  a:visited {
+
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .headerCell {
+
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+
+
+    .headerCellWithFlex {
+      display: flex;
+      align-items: center;
+    }
+
+    .headerFlex {
+
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      span:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .dataCell {
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 400;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    font-family: 'Prompt';
+
+    &:nth-child(2),
+    &:nth-child(4),
+    {
+
+      text-align: center;
+    }
+
+    a {
+      color: #007bff;
+      font-family: 'Prompt';
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+}
